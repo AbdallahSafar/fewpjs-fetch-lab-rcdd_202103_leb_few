@@ -3,7 +3,6 @@ function fetchBooks() {
   const url = "https://anapioficeandfire.com/api/books";
   fetch(url).then(response => response.json()).then(json => {
     renderBooks(json);
-    console.log(json);
   });
 }
 
